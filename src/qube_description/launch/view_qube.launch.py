@@ -9,7 +9,7 @@ def generate_launch_description():
     pkg_share = get_package_share_directory("qube_description")
 
     # URDF/Xacro
-    urdf_file = os.path.join(pkg_share, "urdf", "qube.urdf.xarco")
+    urdf_file = os.path.join(pkg_share, "urdf", "qube.urdf.xacro")
     robot_description_content = xacro.process_file(urdf_file).toxml()
 
     # Robot state publisher

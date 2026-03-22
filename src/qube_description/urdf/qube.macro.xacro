@@ -15,6 +15,7 @@
     <xacro:property name="ind_x" value="${ind_l/2.0}"/>
     <xacro:property name="ind_z" value="${rotor_half + ind_h/2.0}"/>
 
+    <link name="${prefix}base_link"/>
 
     <link name="${prefix}stator_link">
       <visual>
@@ -49,13 +50,11 @@
       </visual>
     </link>
 
-
     <joint name="${prefix}stator_joint" type="fixed">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}stator_link"/>
       <origin xyz="0 0 ${stator_half}" rpy="0 0 0"/>
     </joint>
-
 
     <joint name="${prefix}motor_joint" type="revolute">
       <parent link="${prefix}stator_link"/>
@@ -64,7 +63,6 @@
       <axis xyz="0 0 1"/>
       <limit lower="-3.14159" upper="3.14159" effort="1.0" velocity="2.0"/>
     </joint>
-
 
     <joint name="${prefix}indicator" type="fixed">
       <parent link="${prefix}rotor_link"/>
