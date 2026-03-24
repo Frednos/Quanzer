@@ -3,7 +3,7 @@
 
   <!-- Inkluder makrofilen -->
   <xacro:include filename="$(find qube_description)/urdf/qube.macro.xacro"/>
-
+  <xacro:include filename="$(find qube_driver)/ros2_control/qube_driver.ros2_control.xacro"/>
   <!-- World-link -->
   <link name="world"/>
 

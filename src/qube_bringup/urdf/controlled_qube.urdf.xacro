@@ -23,4 +23,12 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
+    <!-- Kall ros2_control-makroen -->
+    <xacro:qube_driver_ros2_control
+            name="qube_driver"
+            prefix=""
+            baud_rate="$(arg baud_rate)"
+            device="$(arg device)"
+            simulation="$(arg simulation)"/>
+
 </robot>
