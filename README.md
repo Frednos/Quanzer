@@ -29,3 +29,16 @@ Kjør fra rotmappen:
 ```bash
 source /opt/ros/jazzy/setup.bash
 colcon build
+```
+## Kjøre prosjektet
+
+### Terminal 1
+```bash
+source install/setup.bash
+ros2 launch qube_bringup bringup.launch.py
+```
+### Terminal 2
+```bash
+source install/setup.bash
+ros2 run qube_controller controller_node
+```
