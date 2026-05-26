@@ -2,6 +2,10 @@
 
 ROS2-prosjekt for Quanser/Qube-systemet.
 
+## Prosjektbeskrivelse
+
+Dette prosjektet implementerer styring, visualisering og kommunikasjon for Quanser Qube i ROS2. Systemet inkluderer drivere, robotmodell, launch-filer og regulatorer for simulering og testing.
+
 ## Innhold
 
 Prosjektet består av flere ROS2-pakker:
